@@ -107,7 +107,7 @@ body{
     grid-template-columns: auto auto auto auto;
     background-color: rgba(255, 255, 255, 0.743);
     border-radius: 15px;
-    width: 90%;
+    width: 80%;
     height: 80vh;
     justify-content: center;
     align-items: center;
@@ -115,20 +115,21 @@ body{
 }
 
 .image-section-2 .img-1, .img-2, .img-3, .img-4{
+    width: 15vw;
     transition: all 200ms ease-in-out;
     border-radius: 10px;
 }
 .image-section-2 .img-1:hover{
-    width: 405px;
+    width: 25vw;
 }
 .image-section-2 .img-2:hover{
-    width: 395px;
+    width: 25vw;
 }
 .image-section-2 .img-3:hover{
-    width: 380px;
+    width: 25vw;
 }
 .image-section-2 .img-4:hover{
-    width: 365px;
+    width: 25vw;
 }
 /* fin seccion 2 */
 
@@ -179,17 +180,18 @@ body{
 }
 
 .image-section-4 .img-1, .img-2, .img-3, .img-4{
+    width: 15vw;
     transition: all 200ms ease-in-out;
     border-radius: 10px;
 }
 .image-section-4 .img-1:hover{
-    width: 405px;
+    width: 20vw;
 }
 .image-section-4 .img-2:hover{
-    width: 395px;
+    width: 22vw;
 }
 .image-section-4 .img-3:hover{
-    width: 405px;
+    width: 20vw;
 }
 /* fin seccion 4 */
 
@@ -222,20 +224,15 @@ body{
 }
 /* fin seccion 5 */
 
-.footer-pag{
+.footer-pag{   
+    width: 100%;
     background: linear-gradient(to left, #7287fe, #ff7768);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.footer-pag .listas{   
     display: grid;
     grid-template-columns: auto auto auto;
-    align-items: center;
+    align-items: end;
     justify-content: space-around;
     height: 30vh;
     min-height: 40vh;
-    width: 80%;
 }
 .footer-pag ul, ol{
     gap: 100px;
