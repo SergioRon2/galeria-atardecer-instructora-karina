@@ -15,7 +15,7 @@ body{
     display: grid;
     grid-template-columns: 5% 70% 25%;
     height: 60px;
-    background: linear-gradient(to left, #7287fe, #ff7768);
+    background: linear-gradient(to left, #7287feb6, #ff7768ab);
 
     /* barra estatica  */
     position: sticky;
@@ -116,7 +116,7 @@ body{
 
 .image-section-2 .img-1, .img-2, .img-3, .img-4{
     width: 15vw;
-    transition: all 200ms ease-in-out;
+    transition: all 500ms;
     border-radius: 10px;
 }
 .image-section-2 .img-1:hover{
@@ -179,19 +179,13 @@ body{
     gap: 20px;
 }
 
-.image-section-4 .img-1, .img-2, .img-3, .img-4{
-    width: 15vw;
+.image-section-4 .s4-img-1, .s4-img-2, .s4-img-3, .s4-img-4{
+    width: 20vw;
     transition: all 200ms ease-in-out;
     border-radius: 10px;
 }
-.image-section-4 .img-1:hover{
-    width: 20vw;
-}
-.image-section-4 .img-2:hover{
+.image-section-4 .s4-img-2:hover{
     width: 22vw;
-}
-.image-section-4 .img-3:hover{
-    width: 20vw;
 }
 /* fin seccion 4 */
 
@@ -226,7 +220,7 @@ body{
 
 .footer-pag{   
     width: 100%;
-    background: linear-gradient(to left, #7287fe, #ff7768);
+    background: linear-gradient(to left, #7287feb6, #ff7768ab);
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: end;
