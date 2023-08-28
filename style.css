@@ -46,7 +46,8 @@ body{
     align-items: center;
 }
 .logos-finales input{
-    width: 50px;
+    text-align: center;
+    width: 70px;
     height: 20px;
     padding: 10px;
     border: none;
