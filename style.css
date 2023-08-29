@@ -1,3 +1,21 @@
+@keyframes img-animation {
+    0%{
+        width: 400px;
+    }
+    25%{
+        width: 405px;
+    }
+    50%{
+        width: 400px;
+    }
+    75%{
+        width: 405px;
+    }
+    100%{
+        width: 400px;
+    }
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -153,13 +171,14 @@ body{
 }
 .s3 img{
     border-radius: 10px;
+    animation: img-animation 4s infinite ease-in-out;
 }
 .s3 .img-1{
     transition: all 200ms ease-in-out;
 }
-.s3 .img-1:hover{
-    width: 405px;
-}
+/* .s3 .img-1:hover{
+    width: 405px;     este hover era para la posicion del mouse pero pienso que se ve mejor con la animacion
+} */
 .s3 .parrafo-section-3{
     color: white;
     font-size: 20px;
@@ -209,13 +228,14 @@ body{
 }
 .s5 img{
     border-radius: 10px;
+    animation: img-animation 4s infinite ease-in-out;
 }
 .s5 .img-1{
     transition: all 200ms ease-in-out;
 }
-.s5 .img-1:hover{
-    width: 405px;
-}
+/* .s5 .img-1:hover{
+    width: 405px;    este hover era para la posicion del mouse pero pienso que se ve mejor con la animacion
+} */ 
 .s5 .parrafo-section-5{
     color: white;
     font-size: 20px;
