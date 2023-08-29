@@ -171,7 +171,7 @@ body{
 }
 .s3 img{
     border-radius: 10px;
-    animation: img-animation 4s infinite ease-in-out;
+    animation: img-animation 2s infinite ease-in-out;
 }
 .s3 .img-1{
     transition: all 200ms ease-in-out;
@@ -228,7 +228,7 @@ body{
 }
 .s5 img{
     border-radius: 10px;
-    animation: img-animation 4s infinite ease-in-out;
+    animation: img-animation 2s infinite ease-in-out;
 }
 .s5 .img-1{
     transition: all 200ms ease-in-out;
