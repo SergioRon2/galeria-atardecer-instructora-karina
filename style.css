@@ -20,6 +20,7 @@ body{
     /* barra estatica  */
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 .logo{
     display: flex;
@@ -115,23 +116,25 @@ body{
     gap: 20px;
 }
 
-.image-section-2 .img-1, .img-2, .img-3, .img-4{
+.image-section-2 .img-1,
+.image-section-2 .img-2,
+.image-section-2 .img-3,
+.image-section-2 .img-4 {
     width: 15vw;
     transition: all 500ms;
-    border-radius: 10px;
+    border-radius: 55px;
+    backdrop-filter: brightness(0.1);
 }
-.image-section-2 .img-1:hover{
+
+.image-section-2 .img-1:hover,
+.image-section-2 .img-2:hover,
+.image-section-2 .img-3:hover,
+.image-section-2 .img-4:hover {
     width: 25vw;
+    border-radius: 20px;
+    backdrop-filter: brightness(1);
 }
-.image-section-2 .img-2:hover{
-    width: 25vw;
-}
-.image-section-2 .img-3:hover{
-    width: 25vw;
-}
-.image-section-2 .img-4:hover{
-    width: 25vw;
-}
+
 /* fin seccion 2 */
 
 /* ----------------------------------------------------------- */
