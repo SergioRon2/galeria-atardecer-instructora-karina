@@ -17,9 +17,10 @@
             <img src="img/logo.jpg" alt="logo.jpg" width="50" height="50">
         </div>
         <nav class="barra">
-            <a href="">Inicio</a>
-            <a href="">Servicios</a>
-            <a href="">Productos</a>
+            <a href="#imagenes-section-2">Imagenes</a>
+            <a href="#informacion-section-3">Informacion</a>
+            <a href="#imagenes-section-4">Adicionales</a>
+            <a href="#mas-informacion">Mas informacion</a>
         </nav>
         <div class="logos-finales">
             <a href=""><img src="img/chat.png" alt="chat.png" width="40"></a>
@@ -32,12 +33,12 @@
     <section class="s1">
         <div class="cuadro">
             <h1>Galeria cielo</h1>
-            <img src="img/bg-s1.jpg" alt="" width="1200">
+            <img src="img/bg-s1.jpg" alt="">
         </div>
     </section>
     <!-- fin seccion 1 -->
     <!-- inicio seccion 2 -->
-    <section class="s2">
+    <section class="s2" id="imagenes-section-2">
         <div class="image-section-2">
             <img src="img/s2-img1.jpg" class="img-1" alt="" width="380">
         </div>
@@ -55,20 +56,22 @@
     <!-- inicio seccion 3 -->
     <section class="s3">
         <div class="image-section-3">
-            <img src="img/s3-img1.jpg" class="img-1" alt="" width="400">
+            <img src="img/s3-img1.jpg" class="img-1" alt="">
         </div>
-        <div class="parrafo-section-3">
+        <div class="parrafo-section-3" id="informacion-section-3">
+            <h1>Lorem ipsum dolor sit amet </h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quidem ipsa inventore recusandae animi velit, doloremque quas placeat totam sequi sapiente eaque? Nam, libero molestiae soluta cum mollitia molestias praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, tempora mollitia? Excepturi, omnis inventore dolor nemo provident assumenda placeat similique optio ullam mollitia magnam molestiae possimus, architecto quas. Officiis, error?</p>
         </div>
     </section>
     <!-- fin seccion 3 -->
     <!-- inicio seccion 4 -->
     <section class="s4">
-        <div class="image-section-4">
+        <div class="image-section-4" id="imagenes-section-4">
             <img src="img/s4-img1.jpg" class="s4-img-1" alt="">
         </div>
         <div class="image-section-4">
-            <img src="img/s4-img2.jpg" class="s4-img-2" alt="">
+            <img src="img/s4-img2.jpg" class="s4-img-2" alt="" onclick="informacionImagen(), borrarInfo()">
+            <p id="img-function"></p>
         </div>
         <div class="image-section-4">
             <img src="img/s4-img3.jpg" class="s4-img-3" alt="">
@@ -76,11 +79,12 @@
     </section>
     <!-- fin seccion 4 -->
     <!-- inicio seccion 5 -->
-    <section class="s5">
+    <section class="s5" id="mas-informacion">
         <div class="image-section-5">
             <img src="img/s5-img1.jpg" class="img-1" alt="" width="400">
         </div>
         <div class="parrafo-section-5">
+            <h1>Lorem ipsum dolor sit amet </h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi itaque fuga vitae, maxime esse sed voluptatibus sapiente totam nulla illo, atque quia reprehenderit autem suscipit, delectus quas exercitationem eius saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit reiciendis dignissimos totam molestias aperiam vitae illo, tenetur error ad saepe enim tempora magnam cupiditate libero incidunt accusamus in alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum maxime voluptatem tempora necessitatibus ullam architecto, sit veniam dignissimos eaque maiores minima, ea quos at adipisci voluptas ipsa ratione sed.</p>
         </div>
     </section>
@@ -108,5 +112,9 @@
             <p>&copy; Sergio Rondon 2023</p>
     </footer>
     <!-- fin seccion navbar -->
+
+    <!-- enlazamiento app.js  -->
+    <script src="app.js"></script>
+    <!-- fin enlazamiento  -->
 </body>
 </html>

@@ -15,243 +15,453 @@
         width: 400px;
     }
 }
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        background-image: url(img/bg-img.jpg);
+        background-size: cover; 
+        min-height: 100vh;
+        backdrop-filter: brightness(0.5);
+        font-family: 'Kanit', sans-serif;
+        user-select: none;
+    }
+    /* seccion navbar */
+    .navbar{
+        display: grid;
+        grid-template-columns: 5% 75% 20%;
+        height: 60px;
+        background: linear-gradient(to left, #7287feb6, #ff7768ab);
+    
+        /* barra estatica  */
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        border-radius: 50%;
+    }
+    .barra{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .barra a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .logos-finales{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logos-finales input{
+        text-align: center;
+        width: 70px;
+        height: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        transition: all 300ms ease-in-out;
+    }
+    .logos-finales input:hover{
+        width: 200px;
+        height: 20px;
+    }
+    .logos-finales input:focus{
+        width: 200px;
+    }
+    /* fin seccion navbar */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 1 */
+    .s1{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .s1 img{
+        transition: all 200ms ease-in-out;
+        width: 1200px;
+    }
+    .cuadro{
+        border-radius: 15px;
+        height: 900px;
+        width: 1600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    
+    }
+    .cuadro img{
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    .cuadro h1{
+        font-size: 50px;
+        color: white;
+    }
+    /* fin seccion 1 */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 2 */
+    .s2{
+        margin: auto;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: rgba(255, 255, 255, 0.743);
+        border-radius: 15px;
+        width: 80%;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .image-section-2 .img-1,
+    .image-section-2 .img-2,
+    .image-section-2 .img-3,
+    .image-section-2 .img-4 {
+        width: 15vw;
+        transition: all 500ms;
+        border-radius: 55px;
+        filter: brightness(0.5);
+    }
+    
+    .image-section-2 .img-1:hover,
+    .image-section-2 .img-2:hover,
+    .image-section-2 .img-3:hover,
+    .image-section-2 .img-4:hover {
+        width: 25vw;
+        border-radius: 20px;
+        filter: brightness(1);
+    }
+    
+    /* fin seccion 2 */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 3 */
+    .s3{
+        margin: auto;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 35% 35%;
+        width: 80%;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .s3 img{
+        width: 400px;
+        border-radius: 10px;
+        animation: img-animation 2s infinite ease-in-out;
+    }
+    /* .s3 .img-1:hover{
+        width: 405px;     este hover era para la posicion del mouse pero pienso que se ve mejor con la animacion
+    } */
+    .s3 .parrafo-section-3{
+        color: white;
+        font-size: 20px;
+    }
+    .s3 .parrafo-section-3 h1{
+        margin-top: 30px;
+        font-size: 35px;
+    }
+    /* fin seccion 3 */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 4 */
+    .s4{
+        margin: auto;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: rgba(255, 255, 255, 0.743);
+        border-radius: 15px;
+        width: 80%;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .image-section-4 .s4-img-1, .s4-img-2, .s4-img-3{
+        width: 20vw;
+        transition: all 200ms ease-in-out;
+        border-radius: 10px;
+    }
+    .image-section-4 .s4-img-2:hover{
+        width: 22vw;
+    }
+    .image-section-4 .s4-img-2, p{
+        cursor: pointer;
+        text-align: center;
+    }
+    /* fin seccion 4 */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 5 */
+    .s5{
+        margin: auto;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 35% 35%;
+        width: 80%;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .s5 img{
+        border-radius: 10px;
+        animation: img-animation 2s infinite ease-in-out;
+    }
+    .s5 .img-1{
+        transition: all 200ms ease-in-out;
+    }
+    /* .s5 .img-1:hover{
+        width: 405px;    este hover era para la posicion del mouse pero pienso que se ve mejor con la animacion
+    } */ 
+    .s5 .parrafo-section-5{
+        color: white;
+        font-size: 20px;
+    }
+    /* fin seccion 5 */
+    
+    .footer-pag{   
+        width: 100%;
+        background: linear-gradient(to left, #7287feb6, #ff7768ab);
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: end;
+        justify-content: space-around;
+        height: 30vh;
+        min-height: 40vh;
+    }
+    .footer-pag ul, ol{
+        gap: 100px;
+    }
 
-*{
-    padding: 0px;
-    margin: 0px;
-}
-body{
-    background-image: url(img/bg-img.jpg);
-    background-size: cover; 
-    min-height: 100vh;
-    backdrop-filter: brightness(0.5);
-    font-family: 'Kanit', sans-serif;
-    user-select: none;
-}
-/* seccion navbar */
-.navbar{
-    display: grid;
-    grid-template-columns: 5% 70% 25%;
-    height: 60px;
-    background: linear-gradient(to left, #7287feb6, #ff7768ab);
-
-    /* barra estatica  */
-    position: sticky;
-    top: 0;
-    z-index: 99;
-}
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo img{
-    border-radius: 50%;
-}
-.barra{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.barra a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-.logos-finales{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.logos-finales input{
-    text-align: center;
-    width: 70px;
-    height: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    transition: all 300ms ease-in-out;
-}
-.logos-finales input:hover{
-    width: 200px;
-    height: 20px;
-}
-.logos-finales input:focus{
-    width: 200px;
-}
-/* fin seccion navbar */
-
-/* ----------------------------------------------------------- */
-
-/* inicio seccion 1 */
-.s1{
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.s1 img{
-    transition: all 200ms ease-in-out;
-}
-.s1 img:hover{
-    width: 1210px;
-}
-.cuadro{
-    border-radius: 15px;
-    height: 900px;
-    width: 1600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.cuadro img{
-    border-radius: 15px;
-    margin-top: 10px;
-}
-.cuadro h1{
-    font-size: 50px;
-    color: white;
-}
-/* fin seccion 1 */
-
-/* ----------------------------------------------------------- */
-
-/* inicio seccion 2 */
-.s2{
-    margin: auto;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: rgba(255, 255, 255, 0.743);
-    border-radius: 15px;
-    width: 80%;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.image-section-2 .img-1,
-.image-section-2 .img-2,
-.image-section-2 .img-3,
-.image-section-2 .img-4 {
-    width: 15vw;
-    transition: all 500ms;
-    border-radius: 55px;
-    backdrop-filter: brightness(0.1);
-}
-
-.image-section-2 .img-1:hover,
-.image-section-2 .img-2:hover,
-.image-section-2 .img-3:hover,
-.image-section-2 .img-4:hover {
-    width: 25vw;
-    border-radius: 20px;
-    backdrop-filter: brightness(1);
-}
-
-/* fin seccion 2 */
-
-/* ----------------------------------------------------------- */
-
-/* inicio seccion 3 */
-.s3{
-    margin: auto;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: 35% 35%;
-    width: 80%;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.s3 img{
-    border-radius: 10px;
-    animation: img-animation 2s infinite ease-in-out;
-}
-.s3 .img-1{
-    transition: all 200ms ease-in-out;
-}
-/* .s3 .img-1:hover{
-    width: 405px;     este hover era para la posicion del mouse pero pienso que se ve mejor con la animacion
-} */
-.s3 .parrafo-section-3{
-    color: white;
-    font-size: 20px;
-}
-/* fin seccion 3 */
-
-/* ----------------------------------------------------------- */
-
-/* inicio seccion 4 */
-.s4{
-    margin: auto;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: rgba(255, 255, 255, 0.743);
-    border-radius: 15px;
-    width: 80%;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.image-section-4 .s4-img-1, .s4-img-2, .s4-img-3, .s4-img-4{
-    width: 20vw;
-    transition: all 200ms ease-in-out;
-    border-radius: 10px;
-}
-.image-section-4 .s4-img-2:hover{
-    width: 22vw;
-}
-/* fin seccion 4 */
-
-/* ----------------------------------------------------------- */
-
-/* inicio seccion 5 */
-.s5{
-    margin: auto;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: 35% 35%;
-    width: 80%;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.s5 img{
-    border-radius: 10px;
-    animation: img-animation 2s infinite ease-in-out;
-}
-.s5 .img-1{
-    transition: all 200ms ease-in-out;
-}
-/* .s5 .img-1:hover{
-    width: 405px;    este hover era para la posicion del mouse pero pienso que se ve mejor con la animacion
-} */ 
-.s5 .parrafo-section-5{
-    color: white;
-    font-size: 20px;
-}
-/* fin seccion 5 */
-
-.footer-pag{   
-    width: 100%;
-    background: linear-gradient(to left, #7287feb6, #ff7768ab);
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: end;
-    justify-content: space-around;
-    height: 30vh;
-    min-height: 40vh;
-}
-.footer-pag ul, ol{
-    gap: 100px;
+@media (max-width: 600px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+    body{
+        background-image: url(img/bg-img.jpg);
+        background-size: cover; 
+        backdrop-filter: brightness(0.7);
+        font-family: 'Kanit', sans-serif;
+        user-select: none;
+    }
+    /* seccion navbar */
+    .navbar{
+        display: grid;
+        grid-template-columns: auto;
+        min-height: 80px;
+        background: linear-gradient(to left, #7287feb6, #ff7768ab);
+    
+        /* barra estatica  */
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+    .logo{
+        display: none;
+    }
+    .logo img{
+        border-radius: 50%;
+    }
+    .barra{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .barra a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    .logos-finales{
+        display: none;
+    }
+    .logos-finales input{
+        text-align: center;
+        width: 70px;
+        height: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        transition: all 300ms ease-in-out;
+    }
+    .logos-finales input:hover{
+        width: 200px;
+        height: 20px;
+    }
+    .logos-finales input:focus{
+        width: 200px;
+    }
+    /* fin seccion navbar */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 1 */
+    .s1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .s1 img{
+        width: 450px;
+    }
+    .cuadro{
+        max-height: 60vh;
+        border-radius: 15px;
+    }
+    .cuadro img{
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    .cuadro h1{
+        font-size: 50px;
+        color: white;
+    }
+    /* fin seccion 1 */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 2 */
+    .s2{
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: rgba(255, 255, 255, 0.743);
+        border-radius: 15px;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-section-2 .img-1,
+    .image-section-2 .img-2,
+    .image-section-2 .img-3,
+    .image-section-2 .img-4 {
+        width: 35vw;
+        transition: all 500ms;
+        border-radius: 15px;
+        filter: brightness(0.5);
+    }
+    .image-section-2 .img-1:hover,
+    .image-section-2 .img-2:hover,
+    .image-section-2 .img-3:hover,
+    .image-section-2 .img-4:hover {
+        width: 35vw;
+        border-radius: 20px;
+        filter: brightness(1);
+    }
+    /* fin seccion 2 */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 3 */
+    .s3{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 80px;
+    }
+    .s3 .image-section-3{
+        width: 80%;
+    }
+    .s3 .img1{
+        width: 100px;
+        animation: img-animation 2s infinite ease-in-out;
+    }
+    /* .s3 .img-1:hover{
+        width: 405px;     este hover era para la posicion del mouse pero pienso que se ve mejor con la animacion
+    } */
+    .s3 .parrafo-section-3{
+        color: white;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .s3 .parrafo-section-3 h1{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 35px;
+    }
+    /* fin seccion 3 */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 4 */
+    .s4{
+        display: grid;
+        grid-template-columns: auto;
+        background-color: rgba(255, 255, 255, 0.743);
+        border-radius: 15px;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-section-4 .s4-img-1, .s4-img-2, .s4-img-3{
+        width: 30vw;
+        transition: all 200ms ease-in-out;
+        border-radius: 10px;
+    }
+    /* fin seccion 4 */
+    
+    /* ----------------------------------------------------------- */
+    
+    /* inicio seccion 5 */
+    .s5{
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 70%;
+        gap: 20px;
+    }
+    .s5 img{
+        width: 100px;
+        animation: img-animation 2s infinite ease-in-out;
+    }
+    .s5 .parrafo-section-5{
+        text-align: center;
+        margin-top: 30px;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+    /* fin seccion 5 */
+    
+    .footer-pag{   
+        width: 100%;
+        background: linear-gradient(to left, #7287feb6, #ff7768ab);
+        display: grid;
+        grid-template-columns: auto;
+        align-items: end;
+        gap: 70px;
+        justify-content: space-around;
+        height: 50vh;
+    }
+    .footer-pag ul{
+        display: none;
+    }
 }
